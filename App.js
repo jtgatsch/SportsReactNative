@@ -5,65 +5,21 @@ import {
   Text,
   TextInput,
   View,
-  Button,
   TouchableOpacity,
   StyleSheet,
   StatusBar,
   ScrollView
 } from 'react-native';
+import { Button } from 'react-native-elements';
 
 export default class BackgroundImage extends Component {
   render() {
 
     return (
-      	<Image style={styles.fondo} source={require('./img/Fondo3.png')}>
-
-	      	<StatusBar hidden />
-
-          <ScrollView>
-
-	      	<Image style={styles.logo} source={require('./img/Logo2.png')}></Image>
-
-	      	<TextInput style={styles.input} placeholder={'Nombre de Usuario'} placeholderTextColor={'white'} underlineColorAndroid={'yellow'} 
-	      	inlineImagePadding={10} selectionColor={'green'} />
-
-	      	<TextInput style={styles.input} placeholder={'Clave'} placeholderTextColor={'white'} underlineColorAndroid={'yellow'} 
-	      	inlineImagePadding={10} selectionColor={'green'} secureTextEntry={true} />
-
-          <TextInput style={styles.input} placeholder={'Rut'} placeholderTextColor={'white'} underlineColorAndroid={'yellow'} 
-          inlineImagePadding={10} selectionColor={'green'} secureTextEntry={true} />
-
-          <TextInput style={styles.input} placeholder={'Fecha de Nacimiento'} placeholderTextColor={'white'} underlineColorAndroid={'yellow'} 
-          inlineImagePadding={10} selectionColor={'green'} secureTextEntry={true} />
-
-          <TextInput style={styles.input} placeholder={'Email'} placeholderTextColor={'white'} underlineColorAndroid={'yellow'} 
-          inlineImagePadding={10} selectionColor={'green'} secureTextEntry={true} />
-
-          <TextInput style={styles.input} placeholder={'Clave'} placeholderTextColor={'white'} underlineColorAndroid={'yellow'} 
-          inlineImagePadding={10} selectionColor={'green'} secureTextEntry={true} />
-
-          <TextInput style={styles.input} placeholder={'Dirección'} placeholderTextColor={'white'} underlineColorAndroid={'yellow'} 
-          inlineImagePadding={10} selectionColor={'green'} secureTextEntry={true} />
-
-          <TextInput style={styles.input} placeholder={'Teléfono'} placeholderTextColor={'white'} underlineColorAndroid={'yellow'} 
-          inlineImagePadding={10} selectionColor={'green'} secureTextEntry={true} />
-
-          <TextInput style={styles.input} placeholder={'Estatura'} placeholderTextColor={'white'} underlineColorAndroid={'yellow'} 
-          inlineImagePadding={10} selectionColor={'green'} secureTextEntry={true} />
-
-          <TextInput style={styles.input} placeholder={'Peso'} placeholderTextColor={'white'} underlineColorAndroid={'yellow'} 
-          inlineImagePadding={10} selectionColor={'green'} secureTextEntry={true} />
-
-          <TextInput style={styles.input} placeholder={'Nacionalidad'} placeholderTextColor={'white'} underlineColorAndroid={'yellow'} 
-          inlineImagePadding={10} selectionColor={'green'} secureTextEntry={true} />
-
-	   		  <TouchableOpacity style={styles.button} onPress={this.onPress}>
-            <Text style={{color: 'white', fontSize: 18}}> Registrarse </Text>
-	       	</TouchableOpacity>
-
-          </ScrollView>
-
-      	</Image>
+      	<Button
+        raised
+        icon={{name: 'cached'}}
+        title='BUTTON WITH ICON' />
     );
   }
 }
